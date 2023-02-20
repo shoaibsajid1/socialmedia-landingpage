@@ -1,10 +1,12 @@
 # Social Media Landing Page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/971904c2-3239-4b8a-8260-3ab7f73746bc/deploy-status)](https://app.netlify.com/sites/tourmaline-dusk-d95b3d/deploys)
+
 A simple social media landing page
 
 # Image
 
-![Landing Page](example.png "Landing Page")
+![Landing Page](example.jpg "Landing Page")
 
 ## Usage
 
