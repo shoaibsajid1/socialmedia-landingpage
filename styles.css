@@ -1,0 +1,105 @@
+/* Default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-links li {
+    margin: 0 1rem;
+  }
+  
+  .social-links a {
+    font-size: 2rem;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s infinite;
+  }
+  
+  .social-links a:hover {
+    color: #4267B2;
+  }
+  
+  .facebook-active .social-links a[href*="facebook"] {
+    color: #4267B2;
+  }
+  
+  .whatsapp-active .social-links a[href*="whatsapp"] {
+    color: #25D366;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    .social-links {
+      flex-wrap: wrap;
+    }
+    
+    .social-links li {
+      margin: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+    
+    .social-links a {
+      font-size: 1.5rem;
+    }
+  }
+  
