@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoaib Sajid</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .light-mode {
+            background-color: #ffffff; /* White for light mode */
+            color: #333333; /* Dark gray for text in light mode */
+        }
+        .dark-mode {
+            background-color: #1a1a1a; /* Dark gray for dark mode */
+            color: #f0f0f0; /* Light gray for text in dark mode */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em; /* Increase font size for larger text */
+        }
+        .email {
+            font-size: 1.5em; /* Increase font size for larger text */
+            margin: 10px 0;
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap; /* Ensure icons wrap on smaller screens */
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 10px 15px;
+            text-decoration: none;
+            color: inherit;
+            font-size: 2.5em; /* Increase icon size */
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 2em; /* Increase icon size */
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+    <div class="container">
+        <h1>Shoaib Sajid</h1>
+        <p class="email"><a href="mailto:mail@shoaibsajid.com">mail@shoaibsajid.com</a></p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100089047111192" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/shoaibsajid1" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/971504288017" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.snapchat.com/add/showeeb" target="_blank"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/showeeeb" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = '☀️'; // Sun icon for light mode
+            } else {
+                themeToggle.textContent = '🌙'; // Moon icon for dark mode
+            }
+        }
+    </script>
+</body>
+</html>
